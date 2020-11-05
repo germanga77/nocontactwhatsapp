@@ -18,21 +18,19 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 
        
     console.log(tosend);
+    console.log(device)
    
     var linkmobile = "https://wa.me/" + tosend;
-    var link = "https://web.whatsapp.com/send?phone=" + tosend + "&text&app_absent=0";
+    var linkweb = "https://web.whatsapp.com/send?phone=" + tosend + "&text&app_absent=0";
 
-    console.log(link)
-    console.log(linkmobile)
-
-     //or grab it by tagname etc
-   switch(device){
-      case "mobile": a.href = linkmobile;
-      case "computer": a.href = link;
+   if(device=="mobile"){
+      a.href = linkmobile; 
+      console.log(linkmobile);
+   }else {
+      a.href = linkweb; 
+      console.log(linkweb);
    }
-   
-    
 
-    // document.body.appendChild(element);
+   
     }
             
