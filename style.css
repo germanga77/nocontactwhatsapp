@@ -1,0 +1,20 @@
+body	{ 
+background:url(images/background.svg) center; 
+background-attachment:fixed; 
+}
+
+.navbar-custom{
+    background-color: #128C7E !important;
+}
+
+.miNumero{
+    background-color:#ECE5DD !important;
+}
+
+.miBoton{
+    background-color:#25D366 !important;
+}
+
+.miBoton{
+    background-color:#DCF8C6 !important;
+}
